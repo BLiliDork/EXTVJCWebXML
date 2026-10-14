@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <title>Kezdőlap - Webes Adatkezelő Környezetek</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #1a4480;
+            color: #ffffff;
+            font-family: Arial, sans-serif;
+        }
+        .header-img-container {
+            width: 100%;
+            text-align: center;
+            background-color: #fff;
+        }
+        .header-img-container img {
+            width: 100%;
+            max-height: 250px;
+            object-fit: cover;
+            display: block;
+        }
+        .menu-bar {
+            display: flex;
+            justify-content: space-around;
+            background-color: #1a4480;
+            padding: 15px 0;
+            border-bottom: 1px solid #4a7bb0;
+        }
+        .menu-bar a {
+            color: #ffffff;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 16px;
+        }
+        .menu-bar a:hover {
+            text-decoration: underline;
+        }
+        .content {
+            display: flex;
+            justify-content: space-between;
+            padding: 30px;
+            min-height: 350px;
+        }
+        .left-col {
+            width: 45%;
+        }
+        .right-col {
+            width: 45%;
+            text-align: center;
+        }
+        video {
+            width: 100%;
+            max-width: 400px;
+            border: 2px solid #fff;
+        }
+        footer {
+            text-align: center;
+            padding: 15px;
+            font-size: 12px;
+            border-top: 1px solid #4a7bb0;
+            background-color: #153565;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Fejléc kép, amely a kezdőlapra mutat -->
+    <div class="header-img-container">
+        <a href="kezdolap.html">
+            <img src="iit.jpg" alt="IIT Épület">
+        </a>
+    </div>
+
+    <!-- Menüsor -->
+    <div class="menu-bar">
+        <a href="database.html">Adatbázis rendszerek</a>
+        <a href="webtech.html">Web technológiák 1</a>
+        <a href="webxml.html">Webes adatkezelő környezetek</a>
+    </div>
+
+    <!-- Tartalom -->
+    <div class="content">
+        <div class="left-col">
+            <p>Üdvözöljük a főoldalon!</p>
+            <p>Válasszon a fenti menüpontok közül a kurzusok tematikájának megtekintéséhez.</p>
+        </div>
+        <div class="right-col">
+            <!-- Beágyazott videó a mintához igazodva -->
+            <video controls>
+                <source src="video.mp4" type="video/mp4">
+                A böngésző nem támogatja a videó taget.
+            </video>
+        </div>
+    </div>
+
+    <!-- Lábléc -->
+    <footer>
+        Balogh Lili Dorka, EXTVJC, 2026
+    </footer>
+
+</body>
+</html>
